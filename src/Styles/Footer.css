@@ -1,0 +1,112 @@
+.footer { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+.footer-logo h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 150px;
+    color: yellowgreen;
+}
+
+.footer-logo img {
+    position: absolute;
+    z-index: 1;
+    width: auto ;
+    height: 20vh;
+    top: 10%;
+    left: 20%;
+    margin-right: 10px;
+}
+
+.footer-socials-icons {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-socials-icons i {
+    color: chartreuse;
+}
+
+.footer-logo :hover {
+    color: #ff4c60;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-Links, .footer-address {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    color: yellowgreen;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 10px;
+}
+.footer-address {
+    align-items: flex-start;
+}
+
+.footer-Links i, .footer-address i{
+    font-size: 1.5rem;
+    color: yellowgreen;
+    gap: 10px;
+}
+
+.footer-Links a,
+.footer-address a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-Links a:hover,
+.footer-address a:hover {
+    text-decoration: underline;
+    color: #ff4c60;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+hr {
+display: none;
+}
+@media screen and (max-width: 768px) {
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .footer-socials-icons {
+    font-size: 1.5rem;
+    }
+    .footer-logo {
+        margin-bottom: 0px;
+    }
+    
+    .footer-Links, .footer-address {
+        align-items: center;
+        font-size: 1.2rem;
+    }
+    hr{
+        display: block;
+    }
+    .footer-address {
+        align-items: self-start;
+    }
+}
