@@ -1,7 +1,7 @@
 import Wedding from '../assets/wedding.jpeg';
 import Baby from '../assets/baby.jpeg';
 import Maternity from '../assets/Maternity.jpeg';
-import PrePost from '../assets/Pre & Post Wedding.jpeg';
+import PrePost from '../assets/Pre_Post_Wedding.jpeg';
 import '../Styles/Home.css';
 export default function Home() {
     return (

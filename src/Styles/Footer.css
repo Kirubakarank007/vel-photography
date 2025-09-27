@@ -106,6 +106,6 @@ display: none;
         display: block;
     }
     .footer-address {
-        align-items: self-start;
+        align-items: flex-start;
     }
 }

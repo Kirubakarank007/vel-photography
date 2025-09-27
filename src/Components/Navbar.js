@@ -2,22 +2,18 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import '../Styles/Navbar.css';
 import Logo from '../assets/Logo.jpg';
+import Image1 from '../assets/Image1.jpeg';
+import Image2 from '../assets/Image2.jpeg';
+import Image3 from '../assets/Image3.jpeg';
+
 const Navbar = () => {
   const images = [
-    "../assets/Image1.jpeg",
-    "../assets/Image2.jpeg",
-    "../assets/Image3.jpeg",
+    Image1,
+    Image2,
+    Image3,
   ];
 
-  const [currentImage, setCurrentImage] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000); // 5000ms = 5 seconds
-
-    return () => clearInterval(interval);
-  }, [images.length]);
 
   return (
    <nav className="navbar text-white p-4 flex justify-between">
