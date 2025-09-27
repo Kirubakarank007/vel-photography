@@ -1,0 +1,173 @@
+.navbar {
+  background-size: cover;
+  background-position: center;
+  animation: slideBackground 20s infinite;
+  height: 80vh;
+}
+
+.logo {
+  position: absolute;
+  height: 15vh;
+  width: auto;
+  left: 5%;
+  top: 5%;
+} 
+
+.nav-links {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff0080; /* Example hover */
+}
+/* 4 images, 5s each */
+@keyframes slideBackground {
+  0%   { background-image: url('../assets/Image1.jpeg'); }
+  50%  { background-image: url('../assets/Image2.jpeg'); }
+  100% { background-image: url('../assets/Image3.jpeg'); }
+}
+
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5); /* semi-transparent overlay */
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.navbar-center{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: bolder;
+}
+.navbar-center h1{
+  text-align: center;
+  font-family: monospac;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.navbar-center p{
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+.navbar-center :hover{
+  color: #ff4c60;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-center-social-icons{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-center-social-icons a i{
+  position: relative;
+  height: px;
+  z-index: 2;
+  font-size: 1.5rem;
+}
+
+.navbar-center-social-icons a i:hover{
+  color: #ff4c60;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+} 
+
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 60vh;
+  }
+  .logo {
+  position: absolute;
+  height: 10vh;
+  width: auto;
+  left: 0%;
+  top: 5%;
+} 
+
+  .navbar-center h1 {
+    font-size: 2.5rem;
+  }
+  .navbar-center p {
+    font-size: 1rem;
+    padding: 10px;
+  }  
+ 
+  .menu-toggle{
+    display: block; 
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2rem;
+    cursor: pointer;  
+    z-index: 4;
+    color: white;
+    
+
+  }
+   .nav-links  {
+    position: absolute;
+    top: 0;
+    right: -150%; /* hidden off-screen initially */
+    height: 55vh;
+    width: 50%; /* menu width */
+    background-color: black;
+    padding-top: 4rem;
+    text-align: center;
+    gap: 2rem;
+    transition: right 0.3s ease-in-out;
+    flex-direction: column;
+    z-index: 3;
+  }
+ 
+    .nav-links.open {
+    right: 0; 
+  }
+
+  .nav-links a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover {
+    color: #ff0080;
+  }
+}
