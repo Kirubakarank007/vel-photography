@@ -39,13 +39,13 @@ const Navbar = () => {
       <h1>VELNAMBI VISUALS</h1>
       <p> About Carnivals</p>
       <div className="navbar-center-social-icons">
-      <a href="https://www.instagram.com/velnambi.visuals/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/velnambivisuals/?igsh=dWJsb2VwZDF4cmJh#" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-instagram"></i>
       </a>
-      <a href="https://www.facebook.com/velnambi.visuals" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.facebook.com/Velnambi" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-facebook"></i>
       </a>
-      <a href="https://www.youtube.com/velnambi.visuals" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.youtube.com/@velnambib" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-youtube"></i>
       </a>
       </div>

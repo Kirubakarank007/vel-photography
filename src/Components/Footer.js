@@ -11,13 +11,13 @@ const Footer = () => {
                 <img src={Logo} alt="Logo" className="logo" />
                 <h2>VELNAMBI VISUALS</h2>
                 <div className="footer-socials-icons">
-                    <a href="https://www.instagram.com/velnambi.visuals/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/velnambivisuals/?igsh=dWJsb2VwZDF4cmJh#" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.facebook.com/velnambi.visuals" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/Velnambi" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-facebook"></i>
                     </a>        
-                    <a href="https://www.youtube.com/velnambi.visuals" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.youtube.com/@velnambib" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-youtube"></i>
                     </a>
                 </div>

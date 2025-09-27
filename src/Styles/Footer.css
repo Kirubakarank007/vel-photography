@@ -89,7 +89,6 @@ display: none;
     .footer {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
     }
     
     .footer-socials-icons {
