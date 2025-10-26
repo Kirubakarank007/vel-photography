@@ -1,0 +1,32 @@
+.video h1{
+  font-size: 5rem;
+  margin-bottom: 20px;
+  font-family: 'Brush Script MT', cursive;
+  color: #ff4c60;
+  text-align: center;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.video-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+  transform: scale(1.03);
+}
+
+.video-thumbnail, iframe {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border: none;
+  border-radius: 12px;
+}

@@ -3,8 +3,11 @@ import Baby from '../assets/baby.jpeg';
 import Maternity from '../assets/Maternity.jpeg';
 import PrePost from '../assets/Pre_Post_Wedding.jpeg';
 import '../Styles/Home.css';
+import Navbar from '../Components/Navbar';
 export default function Home() {
     return (
+      <div>
+        <Navbar/>
     <div className="home">
       <h1>Welcome to Velnambi Visuals</h1>
       <div className="home-grid">
@@ -29,6 +32,7 @@ export default function Home() {
           <p className="overlay-text">Pre & Post Wedding Photography</p>
         </div>
 
+      </div>
       </div>
     </div>
   );
