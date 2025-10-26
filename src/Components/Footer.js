@@ -26,7 +26,6 @@ export const Footer = () => {
                 <h1>Quick Links</h1>
                 <Link to="/"><i className='fas fa-home'></i> Home </Link>
                 <Link to="/about"><i className="fas fa-info-circle"></i> About </Link>
-                <Link to="/portfolio"><i className="fas fa-images"></i> Portfolio </Link>
                 <Link to="/videos"><i className="fas fa-video"></i> Videos </Link>
                 <Link to="/contact"><i className="fas fa-envelope"></i> Contact </Link>
             </div>
@@ -39,7 +38,7 @@ export const Footer = () => {
                     Tamilnadu 638501</a>
                 <a href="tel:+919884888777"><i className="fas fa-phone-alt"></i> +91 97500 51899
                 </a>    
-                <a href="mailto:info@velnambivisuals.com">
+                <a href="mailto:velnambivisuals@gmail.com">
                 <i className="fas fa-envelope"></i> velnambivisuals@gmail.com
                 </a>
             </div>

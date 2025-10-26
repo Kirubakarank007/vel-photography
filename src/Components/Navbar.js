@@ -1,20 +1,17 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import '../Styles/Navbar.css';
 import Logo from '../assets/Logo.jpg';
-import Image1 from '../assets/Image1.jpeg';
-import Image2 from '../assets/Image2.jpeg';
-import Image3 from '../assets/Image3.jpeg';
+// import Image1 from '../assets/Image1.jpeg';
+// import Image2 from '../assets/Image2.jpeg';
+// import Image3 from '../assets/Image3.jpeg';
 
 const Navbar = () => {
-  const images = [
-    Image1,
-    Image2,
-    Image3,
-  ];
+ 
 
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [portfolioOpen, setPortfolioOpen] = useState(false); // for mobile dropdown
+  
   return (
    <nav className="navbar text-white p-4 flex justify-between">
     <div className="Logo">
@@ -25,8 +22,28 @@ const Navbar = () => {
     <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
-      <Link to="/portfolio">Portfolio</Link>
-      <Link to="/videos">Videos</Link>
+        <div 
+                className={`dropdown ${portfolioOpen ? 'open' : ''}`}
+                onClick={() => setPortfolioOpen(!portfolioOpen)} // toggle on mobile
+              >
+                <Link className="dropbtn">Portfolio</Link>
+                <div className="dropdown-content">
+                  <Link to="/portfolio/wedding">Wedding Photography</Link>
+                  <Link to="/portfolio/baby">Baby Photography</Link>
+                  <Link to="/portfolio/maternity">Maternity Photography</Link>
+                  <Link to="/portfolio/pre-wedding">Pre-Wedding Photography</Link>
+                </div>
+              </div>
+        <div 
+                className={`dropdown ${portfolioOpen ? 'open' : ''}`}
+                onClick={() => setPortfolioOpen(!portfolioOpen)} // toggle on mobile
+              >
+                <Link className="dropbtn">Videos</Link>
+                <div className="dropdown-content">
+                  <Link to="/videos/wedding-video">Wedding Video</Link>
+                  <Link to="/videos/baby-video">Baby Video</Link>
+                </div>
+              </div>
       <Link to="/contact">Contact</Link> 
     </div>
     
